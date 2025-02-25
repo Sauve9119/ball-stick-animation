@@ -1,0 +1,115 @@
+.box{
+    width: 400px;
+    height: 50px;
+    background-color: blue;
+    animation-name: first;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-delay: 0s;
+    position: relative;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    transition-property: all;
+    transition-timing-function:linear ;
+    transition-duration: 5s; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .box:hover{
+    width: 1200px;
+    background-color: red;
+    transform: scale(2);
+    transform: skew(45deg);
+    
+    
+  }
+  .box2:hover{
+    width: 1200px;
+    background-color: pink;
+  }
+  .circle:hover{
+    width: 1200px;
+    background-color:green;
+    transform: rotate(360deg);
+  }
+  .box2{
+    width: 400px;
+    height: 50px;
+    background-color: blue;
+    animation-name: second;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    position: relative;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    transition-property: all;
+    transition-timing-function:linear ;
+    transition-duration: 5s;
+    margin-right: 4s; 
+  }
+  .circle{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    animation-name: circle;
+    position: relative;
+    border-radius: 50px;
+
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    transition-property: width;
+    transition-timing-function:linear ;
+    transition-duration: 5s; 
+    
+  }
+  
+  
+  @keyframes first {
+    from {left: 0;
+          top: 0;
+  }
+  to{
+    top: 0;
+    left: 1100px;
+  }
+  }
+  
+  @keyframes second {
+    from {left: 0;
+          top: 400px;
+  }
+  to{
+    top: 400px;
+    left: 1100px;
+  }
+  }
+    
+  @keyframes circle {
+    0% {
+        top: 50px;
+        left: 140px;
+    }
+    25% {
+        top: 500px;
+        left: 90px;
+    }
+    50% {
+        top: 50px;
+        left: 1200px;
+    }
+    75% {
+        top: 367px;
+        left: 1300px;
+    }
+    100% {
+        top: 400px;
+        left: 60px;
+    }
+}
+
